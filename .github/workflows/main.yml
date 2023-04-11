@@ -19,4 +19,3 @@ jobs:
             bucket-region: us-east-2
             no-cache: true
             private: true
-            files-to-include: ".*/*,*/*,**"
