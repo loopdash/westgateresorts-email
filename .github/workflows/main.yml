@@ -14,8 +14,9 @@ jobs:
         - name: Deploy
           uses: reggionick/s3-deploy@v3
           with:
-            folder: v8
+            folder: emails
             bucket: wgr-emails
             bucket-region: us-east-2
+            delete-removed: true
             no-cache: true
             private: true
