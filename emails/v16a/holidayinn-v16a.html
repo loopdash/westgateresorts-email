@@ -170,8 +170,8 @@
       .r11-i {
         background-color: #ffffff !important;
         padding-bottom: 20px !important;
-        padding-left: 15px !important;
-        padding-right: 15px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
         padding-top: 20px !important
       }
 
@@ -392,14 +392,51 @@
   </style>
 
   <style type="text/css">
-    @media only screen and (max-width: 460px) {
+    @media only screen and (max-width: 480px) {
       .r0-c {
-        width: 430px !important
+        /* width: 430px !important */
+        width: 100% !important;
       }
       .r1-o {
-        width: 430px !important
+        /* width: 430px !important; */
+        width: 100% !important;
       }
 
+      .block-grid,
+      .col {
+        min-width: 320px !important;
+        max-width: 100% !important;
+        display: block !important;
+      }
+      .block-grid {
+        width: 100% !important;
+      }
+      .col {
+        width: 100% !important;
+      }
+      .col>div {
+        margin: 0 auto;
+      }
+      img.fullwidth,
+      img.fullwidthOnMobile {
+        max-width: 100% !important;
+      }
+      .mobile-hidden {
+        display: none !important;
+        height: 0px !important;
+        width: 0px !important;
+        max-height: 0px !important;
+        max-width: 0px !important;
+      }
+      .mobile-show {
+        display: block !important;
+        height: auto !important;
+        width: auto !important;
+        max-height: none !important;
+        max-width: none !important;
+      }
+    }
+    @media only screen and (max-width: 460px) {
       .r4-i {
         padding: 15px !important;
       }
@@ -430,8 +467,10 @@
       .r5-c.rewards-col-1-2 td.r25-i {
         padding-bottom: 18px !important;
       }
-      .r5-c.rewards-col-2-1 td.r18-c {
-        padding-bottom: 35px !important;
+      .r5-c.rewards-col-2-1 td.r18-c,
+      .r5-c.rewards-col-2-2 td.r18-c {
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
       }
 
 
@@ -460,12 +499,12 @@
     }
 
     @media only screen and (max-width: 432px) {
-      .r0-c {
+      /* .r0-c {
         width: 400px !important
       }
       .r1-o {
         width: 400px !important
-      }
+      } */
       td.hero-title.hero-title-1 {
         padding-left: 0 !important;
         padding-right:0 !important;
@@ -515,9 +554,6 @@
       .r5-c.rewards-col-1-2 td.r25-i {
         padding-bottom: 18px !important;
       }
-      .r5-c.rewards-col-2-1 td.r18-c {
-        padding-bottom: 35px !important;
-      }
 
       td.best-part {
         padding: 0 30px 50px !important;
@@ -540,19 +576,19 @@
         padding: 30px 30px 25px !important;
       }
       tr.footer-brands > td {
-        padding: 0 30px !important;
+        padding: 0 !important;
       }
       tr.footer-links > td {
         padding: 30px !important;
       }
     }
     @media only screen and (max-width: 400px) {
-      .r0-c {
+      /* .r0-c {
         width: 320px !important
       }
       .r1-o {
         width: 320px !important
-      }
+      } */
       .r5-c.rewards-col-2-2 .r18-c {
         padding-bottom: 51px !important;
       }
@@ -561,6 +597,10 @@
       .hero-subtitle span {
         font-size: 16px !important;
         line-height: 22px !important;
+      }
+      .r5-c.rewards-col-1-2 .r18-c {
+        padding-top: 20px !important;
+        padding-bottom: 18px !important;
       }
       td.find-out-p1-1 td, td.find-out-p1-1 td span {
         font-size: 14px !important;
@@ -603,14 +643,22 @@
       td.td-btn-apply-now-small {
         padding-left: 20px !important;
       }
+      .r5-c.rewards-col-2-1 td.r18-c, 
+      .r5-c.rewards-col-2-2 td.r18-c {
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
+      }
+      .r5-c.rewards-col-2-2 td.r18-c {
+        padding-bottom: 46px !important;
+      }
     }
     @media only screen and (max-width: 320px) {
-      .r0-c {
+      /* .r0-c {
         width: 300px !important
       }
       .r1-o {
         width: 300px !important
-      }
+      } */
       .r5-c.rewards-col-1-2 .r18-c {
         padding-top: 20px !important;
         padding-bottom: 49px !important;
@@ -1178,37 +1226,158 @@
                 <tr class="footer-brands" style="background: #ffffff;">
                   <td
                     style="-webkit-font-smoothing: antialiased; border-collapse: collapse; line-height: 1; margin: 0px; padding: 0 40px; background: #ffffff;">
-                    <center>
-                      <img
-                        src="https://wgr-emails.s3.us-east-2.amazonaws.com/v16a/images-v16a/brands.png"
-                        width="100%" height="auto" alt="Brands"
-                        style="-ms-interpolation-mode: bicubic; display: block; max-width: 100%; outline: none; text-decoration: none; height: auto; background: #ffffff;" />
-                    </center>
-                  </td>
-                </tr>
-                <!-- footer links -->
-                <tr class="footer-links">
-                  <td align="center"
-                    style="-webkit-font-smoothing: antialiased; border-collapse: collapse; color: #1E191A; font-family: arial,helvetica,sans-serif; font-style: normal; font-size: 12px; font-weight: 400; line-height: 14px; margin: 0px;  vertical-align: top; border-style: none; padding: 40px 0; ">
-                    <table cellpadding="0" cellspacing="0" border="0" align="center">
-                      <tr>
-                        <td
-                          style="-webkit-font-smoothing: antialiased; border-collapse: collapse; color: #1E191A; font-family: arial,helvetica,sans-serif; font-style: normal; font-size: 12px; font-weight: 400; line-height: 14px; margin: 0px; text-align: left; vertical-align: top; border-style: none; ">
-                          <a href="#" target="_blank"
-                            style="-webkit-font-smoothing: antialiased; border-collapse: collapse; color: #1E191A; font-family: arial,helvetica,sans-serif; font-style: normal; font-size: 12px; font-weight: 400; line-height: 14px; margin: 0px; text-align: left; vertical-align: top; border-style: none; ">Update
-                            Preferences</a>
-                        </td>
-                        <td
-                          style="-webkit-font-smoothing: antialiased; border-collapse: collapse; color: #1E191A; font-family: arial,helvetica,sans-serif; font-style: normal; font-size: 12px; font-weight: 400; line-height: 14px; margin: 0px; text-align: left; vertical-align: top; border-style: none; padding: 0 5px;">
-                          |
-                        </td>
-                        <td
-                          style="-webkit-font-smoothing: antialiased; border-collapse: collapse; color: #1E191A; font-family: arial,helvetica,sans-serif; font-style: normal; font-size: 12px; font-weight: 400; line-height: 14px; margin: 0px; text-align: left; vertical-align: top; border-style: none; ">
-                          <a href="#" target="_blank"
-                            style="-webkit-font-smoothing: antialiased; border-collapse: collapse; color: #1E191A; font-family: arial,helvetica,sans-serif; font-style: normal; font-size: 12px; font-weight: 400; line-height: 14px; margin: 0px; text-align: left; vertical-align: top; border-style: none; ">Unsubscribe</a>
-                        </td>
-                      </tr>
+                    <!--[if IE]><div class="ie-browser"><![endif]-->
+                    <table class="nl-container" style="table-layout: fixed; vertical-align: top; min-width: 320px; Margin: 0 auto; border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #ddd; width: 100%;" cellpadding="0" cellspacing="0" role="presentation" width="100%" bgcolor="#ddd" valign="top">
+                      <tbody>
+                        <tr style="vertical-align: top;" valign="top">
+                          <td style="word-break: break-word; vertical-align: top;" valign="top">
+                            <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td align="center" style="background-color:#ddd"><![endif]-->
+                            <div style="background-color:transparent;">
+                              <div class="block-grid " style="Margin: 0 auto; min-width: 320px; max-width: 600px; overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; background-color: #FFFFFF;">
+                                <div style="border-collapse: collapse;display: table;width: 100%;background-color:#FFFFFF;">
+                                  <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:transparent;"><tr><td align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:600px"><tr class="layout-full-width" style="background-color:#FFFFFF"><![endif]-->
+                                  <!--[if (mso)|(IE)]><td align="center" width="600" style="background-color:#FFFFFF;width:600px; border-top: 0px solid transparent; border-left: 0px solid transparent; border-bottom: 0px solid transparent; border-right: 0px solid transparent;" valign="top"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 0px; padding-left: 0px; padding-top: 0px; padding-bottom: 0px;"><![endif]-->
+                                  <div class="col num12" style="min-width: 320px; max-width: 600px; display: table-cell; vertical-align: top; width: 600px;">
+                                    <div style="width:100% !important;">
+                                      <!--[if (!mso)&(!IE)]><!-->
+                                      <div style="border-top:0px solid transparent; border-left:0px solid transparent; border-bottom:0px solid transparent; border-right:0px solid transparent; padding-top: 0px; padding-bottom: 0px; padding-right: 0px; padding-left: 0px;">
+                                        <!--<![endif]-->
+                                        <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 0px; padding-left: 0px; padding-top: 0px; padding-bottom: 0px; font-family: Arial, sans-serif"><![endif]-->
+                                        <div style="color:#555555;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;line-height:120%;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;">
+                                          <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: #363636; min-width: 100%; " class="stylingblock-content-wrapper">
+                                            <tr>
+                                              <td style="padding: 0px 30px; " class="stylingblock-content-wrapper camarker-inner">
+                                                <div style="color: #ffffff; font-family: Arial, sans-serif; font-size: 12px; line-height:14px;">
+                                                  <br>
+                                                  Holiday Inn Club Vacations Incorporated, the Holiday Inn Club<sup style="font-size:6px;line-height:0px">&reg;</sup>&nbsp;program, and the Holiday Inn Club Vacations<sup style="font-size:6px;line-height:0px">&reg;</sup>&nbsp;resorts are independently owned, operated and marketed and are not owned, operated or marketed by any InterContinental Hotels Group (&ldquo;IHG&rdquo;) companies, or by IHG One Rewards&trade;, or by the owner or licensor of the Holiday Inn<sup style="font-size:6px;line-height:0px">&reg;</sup>&nbsp;brand.</div>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                          <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper">
+                                            <tr>
+                                              <td class="stylingblock-content-wrapper camarker-inner">
+                                                <!--[if !mso]><!-->
+                                                <div class="mobile-show" style="display:none;max-height:0px;overflow:hidden;">
+                                                  <table width="100%" cellspacing="0" cellpadding="0" role="presentation" bgcolor="#363636">
+                                                    <tr>
+                                                      <td align="center"><img data-assetid="1248103" src="https://wgr-emails.s3.us-east-2.amazonaws.com/v16a/images-v16a/ihg-brand-bar-condensed-vertical.png" alt="IHG Hotels &amp; Resorts" width="450" style="display: block; padding: 0px 0px 10px; text-align: center; height: auto; width: 100%; border: 0px;"></td>
+                                                    </tr>
+                                                  </table>
+                                                </div>
+                                                <!--<![endif]-->
+                                                <table class="mobile-hidden" width="100%" cellspacing="0" cellpadding="0" role="presentation" bgcolor="#363636">
+                                                  <tr>
+                                                    <td align="center"><img data-assetid="1232486" src="https://wgr-emails.s3.us-east-2.amazonaws.com/v16a/images-v16a/ihg-brand-bar-condensed-landscape-knockout-v2.png" alt="IHG Hotels &amp; Resorts" width="550" style="display: block; padding: 0px 0px 10px; text-align: center; height: auto; width: 100%; border: 0px;"></td>
+                                                  </tr>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                          <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper">
+                                            <tr>
+                                              <td class="stylingblock-content-wrapper camarker-inner">
+                                                <meta charset="utf-8">
+                                                <title>Untitled Document</title>
+                                                <div style="background-color:transparent;">
+                                                  <div class="block-grid " style="Margin: 0 auto; min-width: 320px; max-width: 600px; overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; background-color: #363636;">
+                                                    <div style="border-collapse: collapse;display: table;width: 100%;background-color:#363636;">
+                                                      <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:transparent;"><tr><td align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:600px"><tr class="layout-full-width" style="background-color:#363636"><![endif]-->
+                                                      <!--[if (mso)|(IE)]><td align="center" width="600" style="background-color:#363636;width:600px; border-top: 0px solid transparent; border-left: 0px solid transparent; border-bottom: 0px solid transparent; border-right: 0px solid transparent;" valign="top"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 15px; padding-left: 15px; padding-top:15px; padding-bottom:15px;"><![endif]-->
+                                                      <div class="col num12" style="min-width: 320px; max-width: 600px; display: table-cell; vertical-align: top; width: 500px;">
+                                                        <div style="width:100% !important;">
+                                                          <!--[if (!mso)&(!IE)]><!-->
+                                                          <div style="border-top:0px solid transparent; border-left:0px solid transparent; border-bottom:0px solid transparent; border-right:0px solid transparent; padding-top:15px; padding-bottom:15px; padding-right: 15px; padding-left: 15px;">
+                                                            <!--<![endif]-->
+                                                            <div style="font-size:16px;text-align:center;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif">
+                                                              <div class="our-class">
+                                                                <a href="http://facebook.com/hiclubvacations" target="_blank" title="Facebook" alias="footer_facebook"><img width="34" height="34" src="https://wgr-emails.s3.us-east-2.amazonaws.com/v16a/images-v16a/f_logo_RGB-White_144.png" alt="Facebook" title="Facebook" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; clear: both; height: auto; float: none; border: none; display: inline-block;"></a>
+                                                                &nbsp;
+                                                                <a href="http://instagram.com/hiclubvacations" target="_blank" title="Instagram" alias="footer_instagram"><img width="32" height="32" src="https://wgr-emails.s3.us-east-2.amazonaws.com/v16a/images-v16a/c69d045e-d275-4cb5-84c5-dd0de4f7abeb.png" alt="Instagram" title="Instagram" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; clear: both; height: auto; float: none; border: none; display: inline-block;"></a>
+                                                                &nbsp;
+                                                                <a href="https://www.youtube.com/user/hiclubvacations" target="_blank" title="YouTube" alias="footer_YouTube"><img width="34" height="34" src="https://wgr-emails.s3.us-east-2.amazonaws.com/v16a/images-v16a/youtube_v6.png" alt="YouTube" title="YouTube" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; clear: both; height: auto; float: none; border: none; display: inline-block;"></a>&nbsp;
+                                                                <a href="http://pinterest.com/hiclubvacations" target="_blank" title="Pinterest" alias="footer_pinterest"><img width="33" height="33" src="https://wgr-emails.s3.us-east-2.amazonaws.com/v16a/images-v16a/9a3b18df-3d03-4bec-95dc-057e5e168da1.png" alt="Pinterest" title="Pinterest" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; clear: both; height: auto; float: none; border: none; display: inline-block;"></a>
+                                                              </div>
+                                                            </div>
+                                                            <!--[if (!mso)&(!IE)]><!-->
+                                                          </div>
+                                                          <!--<![endif]-->
+                                                        </div>
+                                                      </div>
+                                                      <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
+                                                      <!--[if (mso)|(IE)]></td></tr></table></td></tr></table><![endif]-->
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </div>
+                                        <!--[if mso]></td></tr></table><![endif]-->
+                                        <!--[if (!mso)&(!IE)]><!-->
+                                      </div>
+                                      <!--<![endif]-->
+                                    </div>
+                                  </div>
+                                  <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
+                                  <!--[if (mso)|(IE)]></td></tr></table></td></tr></table><![endif]-->
+                                </div>
+                              </div>
+                            </div>
+                            <div style="background-color:transparent;">
+                              <div class="block-grid " style="Margin: 0 auto; min-width: 320px; max-width: 600px; overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; background-color: #363636;">
+                                <div style="border-collapse: collapse;display: table;width: 100%;background-color:#363636;">
+                                  <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:transparent;"><tr><td align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:600px"><tr class="layout-full-width" style="background-color:#363636"><![endif]-->
+                                  <!--[if (mso)|(IE)]><td align="center" width="600" style="background-color:#363636;width:600px; border-top: 1px solid #ffffff; border-left: 0px solid transparent; border-bottom: 0px solid transparent; border-right: 0px solid transparent;" valign="top"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 0px; padding-left: 0px; padding-top: 15px; padding-bottom: 25px;"><![endif]-->
+                                  <div class="col num12" style="min-width: 320px; max-width: 600px; display: table-cell; vertical-align: top; width: 600px;">
+                                    <div style="width:100% !important;">
+                                      <!--[if (!mso)&(!IE)]><!-->
+                                      <div style="border-top:1px solid #ffffff; border-left:0px solid transparent; border-bottom:0px solid transparent; border-right:0px solid transparent; padding-top: 15px; padding-bottom: 25px; padding-right: 25px; padding-left: 25px;">
+                                        <!--<![endif]-->
+                                        <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 0px; padding-left: 0px; padding-top: 0px; padding-bottom: 0px; font-family: Arial, sans-serif"><![endif]-->
+                                        <div style="color:#555555;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;line-height:120%;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;">
+                                          <p style="font-size: 12px; line-height: 16px; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; text-align: center;">
+                                            <span style="font-size: 12px;">This email was sent to: <span style="color:#FFFFFF !important;text-decoration:none;">%%emailaddr%%</span></span>
+                                          </p>
+                                          <p style="font-size: 12px; line-height: 14px; text-align: center; margin: 0;">
+                                            <span style="color: #ffffff; font-size: 12px; line-height: 14px;">&nbsp;</span>
+                                          </p>
+                                          <p style="font-size: 12px; line-height: 16px; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; text-align: center;">
+                                            <span style="font-size: 12px;">This email was sent by:</span>
+                                          </p>
+                                          <p style="font-size: 12px; line-height: 16px; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; text-align: center;">
+                                            <span style="font-size: 12px;">%%Member_Busname%%<br>%%Member_Addr%%<br>%%Member_City%%, %%Member_State%% %%Member_PostalCode%%, %%Member_Country%%</span>
+                                          </p>
+                                          <p style="font-size: 12px; line-height: 14px; text-align: center; margin: 0;">
+                                            <span style="color: #ffffff; font-size: 12px; line-height: 14px;">&nbsp;</span>
+                                          </p>
+                                          <p style="font-size: 12px; line-height: 16px; text-align: center; margin: 0;">
+                                            <span style="font-size: 12px;"><a style="color: #ffffff;" href="https://holidayinnclub.com/privacy-policy" target="_blank" rel="noopener" alias="Privacy_Policy">Privacy Policy</a> | <a style="color: #ffffff;" href="%%=redirectto(@preferenceCenter_url)=%%" target="_blank" rel="noopener" alias="Preference_Center">Preference Center</a> | <a style="color: #ffffff;" href="%%=redirectto(@preferenceCenter_url)=%%" target="_blank" rel="noopener" alias="Unsubscribe">Unsubscribe</a> | <a style="color: #ffffff;" href="%%view_email_url%%" alias="Web_Version">Web Version</a></span>
+                                            <div style='display:none'>
+                                              %%[if 0 == 1 then]%%
+                                              <a href="%%profile_center_url%%" alias="Update Profile">Update Profile</a>
+                                              %%[endif]%%
+                                            </div>
+                                          </p>
+                                          <custom name="opencounter" type="tracking" />
+                                        </div>
+                                        <!--[if mso]></td></tr></table><![endif]-->
+                                        <!--[if (!mso)&(!IE)]><!-->
+                                      </div>
+                                      <!--<![endif]-->
+                                    </div>
+                                  </div>
+                                  <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
+                                  <!--[if (mso)|(IE)]></td></tr></table></td></tr></table><![endif]-->
+                                </div>
+                              </div>
+                            </div>
+                            <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
+                          </td>
+                        </tr>
+                      </tbody>
                     </table>
+                    <!--[if (IE)]></div><![endif]-->
+
                   </td>
                 </tr>
               </table>
