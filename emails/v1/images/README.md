@@ -1,1 +1,0 @@
-# Westgate Resorts Email
